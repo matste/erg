@@ -1,0 +1,47 @@
+body{
+  font-size:16px;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuContainer{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color:white;
+  opacity: 0.9;
+  width: 100%;
+  height: 3em;
+  border-bottom: 3px solid #e0e0e0;
+  align-items: center;
+}
+
+.leftMenu {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  color: #272727;
+  letter-spacing: 1px;
+  margin-left: 2em;
+  text-align: center;
+}
+
+.leftMenu nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.leftMenu nav ul li{
+  margin-right: 2em;
+}
+
+.socialMenu{
+
+}
