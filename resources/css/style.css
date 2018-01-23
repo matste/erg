@@ -40,8 +40,25 @@ body{
 
 .leftMenu nav ul li{
   margin-right: 2em;
+  cursor: pointer;
+}
+
+.leftMenu nav ul li:hover{
+  color: #C39F76;
 }
 
 .socialMenu{
+  margin-right: 2em;
+}
 
+.socialMenu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.socialMenu ul li{
+  margin-left: 1em;
+  cursor: pointer;
+  color: #272727;
 }
