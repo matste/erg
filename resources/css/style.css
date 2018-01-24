@@ -10,33 +10,39 @@ body{
   justify-content: center;
 }
 
+/* MENU SECTION AT TOP OF PAGE */
+
 .menuContainer{
   position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color:white;
+  background-color:black;
   opacity: 0.9;
   width: 100%;
-  height: 3em;
-  border-bottom: 3px solid #e0e0e0;
+  height: 8em;
   align-items: center;
 }
 
-.logoMenu {
-  background-image: url("../images/ERGLogoGoldWhite.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 5em;
-}
 
 .leftMenu {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-size: .9em;
-  color: #272727;
+  color: #dedede;
   letter-spacing: 1px;
   margin-left: 2em;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo img {
+  height: 7em;
+}
+
+.logo {
+  margin-right: 3em;
 }
 
 .leftMenu nav ul {
@@ -48,10 +54,18 @@ body{
 .leftMenu nav ul li{
   margin-right: 2em;
   cursor: pointer;
+  padding-bottom:0.6em;
+  padding-top: 0.6em;
+  border-bottom: 2px solid black;
+}
+
+.leftMenu nav ul li img {
+  height: 7em;
 }
 
 .leftMenu nav ul li:hover{
   color: #C39F76;
+  border-bottom: 2px solid #C39F76;
 }
 
 .socialMenu{
@@ -67,27 +81,19 @@ body{
 .socialMenu ul li{
   margin-left: 1em;
   cursor: pointer;
-  color: #272727;
+  color: #dedede;
 }
 
 .socialMenu ul li:hover{
   color: #C39F76;
 }
 
-.logoRow {
-  width: 100%;
-  background-color: white;
-  margin-top: 4em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+/* JUMBOTRON PICTURE SECTION OF THE PAGE */
 
-.logoRow img {
-  height: 10em;
-}
 
 .jumbotron {
-  width: 900px;
-  text-align: center;
+  background-image: url("../images/WeddingTentLarge.png");
+  background-size: cover;
+  width: 100%;
+  height: 50em;
 }
