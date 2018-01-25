@@ -2,14 +2,6 @@ body{
   font-size:16px;
 }
 
-.container {
-  width: 100%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* MENU SECTION AT TOP OF PAGE */
 
 .menuContainer{
@@ -17,10 +9,11 @@ body{
   display: flex;
   justify-content: space-between;
   background-color:black;
-  opacity: 0.8;
+  opacity: 0.9;
   width: 100%;
   height: 8em;
   align-items: center;
+  z-index: 10;
 }
 
 
@@ -57,6 +50,7 @@ body{
   padding-bottom:0.6em;
   padding-top: 0.6em;
   border-bottom: 2px solid black;
+  transition: border-bottom 0.5s;
 }
 
 .leftMenu nav ul li img {
@@ -90,10 +84,74 @@ body{
 
 /* JUMBOTRON PICTURE SECTION OF THE PAGE */
 
+.container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .jumbotron {
   background-image: url("../images/WeddingTentLarge.png");
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.jumbotron h1 {
+  font-size: 2.5em;
+  font-family: 'Roboto Slab';
+  color: #dedede;
+  margin: 5.5em 0em 0em 4em;
+  padding: .4em .5em;
+  background-color: #dedede;
+  opacity: 0.85;
+  color: black;
+  text-transform: uppercase;
+}
+
+.jumbotron h2 {
+  font-size: 1.5em;
+  font-family: 'Roboto Slab';
+  color: #dedede;
+  margin: 0em 0em 5em 4em;
+  padding: .5em .5em;
+  background-color: #dedede;
+  opacity: 0.85;
+  color: black;
+  text-transform: uppercase;
+}
+
+.jumboButtonContainer {
+  width: 100%;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jumboButton {
+  background-color: black;
+  padding: 1.5em 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5em;
+  transition: background-color 0.3s;
+}
+
+.jumboButton:hover {
+  background-color: #C39F76;
+}
+
+.jumboButton p {
+  color: #dedede;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  letter-spacing: 1px;
 }
