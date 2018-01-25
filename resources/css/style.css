@@ -156,10 +156,47 @@ body{
   letter-spacing: 1px;
 }
 
-.aboutSection {
+.aboutContainer {
   width: 100%;
-  height: 20em;
+  padding-top: 2em;
   background-color: white;
   box-shadow: 10px 0px 15px #000000;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aboutRowWidth {
+  width: 900px;
+  height 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aboutText {
+  width: 450px;
+}
+
+.aboutText h1 {
+ font-family: 'Roboto Slab';
+ font-size: 2.5em;
+ text-transform: uppercase;
+ color: #C39F76;
+}
+
+.aboutText p {
+  font-family: 'Open Sans';
+  padding-right: 3em;
+  margin-top: 1em;
+  font-size: .9em;
+  line-height:1.2em;
+}
+
+.aboutImage {
+  width: 450px;
+}
+
+.aboutImage img {
+  width: 450px;
 }
